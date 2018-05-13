@@ -1,6 +1,6 @@
 # Apuntes de base de datos
 
-# Consulta de: Marcelo Gatica
+## Consulta de: Marcelo Gatica
 ```sql
 SELECT p.nombre,GROUP_CONCAT(e.nombre SEPARATOR ',') FROM persona_etiqueta pe
 INNER JOIN persona p ON pe.id_persona = p.id
@@ -9,7 +9,7 @@ WHERE p.id = 1 AND
 e.id = pe.id_etiqueta;
 ```
 
-# Procedimiento de Franco Barrera
+## Procedimiento de Franco Barrera
 ```sql
 CREATE TABLE test(-- DROP TABLE test;
     id INT AUTO_INCREMENT,
